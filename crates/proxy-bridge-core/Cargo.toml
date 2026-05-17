@@ -1,0 +1,12 @@
+[package]
+name = "proxy-bridge-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Cross-platform core library for ProxyBridge: rule engine, proxy protocols, connection tracking"
+
+[dependencies]
+tokio = { version = "1", features = ["net", "io-util", "sync", "time", "macros"] }
+log = "0.4"
+base64 = "0.22"
+anyhow = "1"
