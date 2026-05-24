@@ -2,7 +2,7 @@ use anyhow::{bail, Result};
 use clap::Parser;
 use proxy_bridge_core::config::ProxyType;
 
-pub const VERSION: &str = "0.1.0";
+pub const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 /// ProxyBridge CLI arguments (cross-platform)
 #[derive(Parser, Debug)]
